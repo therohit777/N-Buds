@@ -1,0 +1,27 @@
+html{
+  scroll-behavior: smooth;
+}
+/* body{
+  background-color: #1b014f;
+}
+.App{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home{
+  width: 100%;
+  padding-top: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoimg{
+  border-radius: 50%;
+  box-shadow:   0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0);
+  width: 350px;
+}
+.logotext{
+  
+} */
