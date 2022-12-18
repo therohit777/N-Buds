@@ -5,14 +5,15 @@ import profile2 from "../images/pranav.jpeg";
 
 const Team = () => {
   return (
-    <div className='Team' id='team'>
-        <h1 className='teamhead'>Our Team</h1>
+    <div className='Team'>
+        <div className="headteamss"></div>
+        <h1 className='teamhead' id='team'>Our Team</h1>
 
         <div className='profilediv '>
         <div className="teamperson spacepro1">
             <div className="uppercontainer">
               <div className="imgh">
-              <img src={profile1} className="profilephoto"/>
+              <img src={profile1} className="profilephoto" alt='none'/>
               </div>
             </div>
 
@@ -29,7 +30,7 @@ const Team = () => {
         <div className="teamperson spacepro2">
             <div className="uppercontainer">
               <div className="imgh">
-              <img src={profile2} className="profilephoto"/>
+              <img src={profile2} className="profilephoto" alt='none'/>
               </div>
             </div>
 

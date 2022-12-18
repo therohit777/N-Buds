@@ -1,0 +1,44 @@
+.Services{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#services{
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.servicepart1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.servicepart1 p{
+    text-align: center;
+    font-size: 13px;
+}
+.servicepart2{
+    margin-top: 30px;
+}
+
+.servicecont{
+    width: 300px;
+    padding: 20px;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.servicecont h3{
+    margin-bottom: -10px;
+}
+.servicelogo{
+    font-size: 70px;
+}
+.servicecont:hover{
+    color: white;
+    background-color: #f9cc02;
+    box-shadow: 0px 2px 13px 3px #2f2f2f54;
+}
