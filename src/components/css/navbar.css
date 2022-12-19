@@ -104,6 +104,9 @@ body{
         padding-left: 0;
         margin-left: 70%;
     }
+    .navlist li{
+        margin-top: 10px;
+    }
     .navlist li a{
         color: #ffffff;
     }

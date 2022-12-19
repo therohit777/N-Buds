@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import "../css/navbar.css";
 import {MdViewHeadline} from "react-icons/md";
-import { WindowScrollController } from 'fullcalendar';
+
 
 const Navbar = () => {
   const [navscrollcol, setnavscrollcol] = useState(true);
   const [navhid, setnavhid] = useState(true);
 
   const changecol=()=>{
-    console.log(window.scrollY);
     if(window.scrollY>=80){
       setnavscrollcol(false);
     }
