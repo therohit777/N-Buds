@@ -7,7 +7,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
+
 .homelogo{
     width: 350px;
     height: 350px;
@@ -62,47 +64,49 @@
     margin-bottom: 0;
     padding-bottom: 0;
 }
+@media screen and (max-width:800px) {
+    .Home{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .homelogo{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:650px) {
+    .homedescription{
+        width: 60%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .homebtn{
+        margin-bottom: 100px;
+    }
+    .homelogo{
+        width: 300px;
+        margin-top: 150px;
+    }
+}
 
-/* .contactbox{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.623);
-    margin-top: 120px;
-    width: 20%;
-    border-radius: 10px;
-    padding: 20px 15px;
-   padding-bottom: -10px;
+@media screen and (max-width:500px) {
+    .homelogo{
+        width: 80%;
+    }
+    .homehead{
+        font-size: 30px;
+    }
+    .hometext{
+        font-size: 12px;
+    }
+    .homedescription{
+        width: 70%;
+    }
 }
-.contacttext{
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+
+@media screen and (max-width:290px) {
+   .homelogo{
+    width: 60%;
+   }
 }
-.contactbox input{
-    padding: 15px 15px;
-    border-radius: 5px;
-    margin-top: 15px;
-    border: none;
-    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.578);
-}
-.contactbox textarea{
-    margin-top: 15px;
-    padding: 15px 15px;
-    border: none;
-    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.578);
-    border-radius: 5px;
-}
-.contactbox .sendeeesbtn{
-    display: flex;
-    justify-content: right;
-}
-.contactbox button{
-    margin-top: 20px;
-    width: 100px;
-    padding: 12px;
-    border-radius: 5px;
-    background-color: #000;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-} */
+

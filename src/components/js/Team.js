@@ -41,14 +41,8 @@ const Team = () => {
                 My Stacks:  Django, React-Native. 
               </div>
             </div>
-
         </div>
-
        </div>
-
-
-        
-
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import './App.css';
-import Aboutus from './components/js/Aboutus';
+// import Aboutus from './components/js/Aboutus';
 import Contactus from './components/js/Contactus';
 import Footer from './components/js/Footer';
 import Home from './components/js/Home';
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Home/>
-      <Aboutus/>
+      {/* <Aboutus/> */}
       <Services/>
       <Team/>
       <Contactus/>

@@ -1,5 +1,55 @@
 .footer{
-    background: #000;
+    background: rgba(0, 0, 0, 0.785);
     width: 100%;
-    height: 70vh;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom:0 ;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.footerhead{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.footerdescription{
+    font-size: 12px;
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+}
+.footerlogo{
+    width: 25%;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-evenly;
+}
+.footerlogo .logo1{
+    font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding:5px 10px 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerlogo .logo1 a{
+    color: #ffffff;
+}
+.footerlogo .logo1 a:hover{
+    color: #f9cc02;;
+}
+.footercopywrite{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 12vh;
+    border-top: 2px solid gray;
+    font-size: 13px;
+    margin-bottom: 0;
+    align-items: center;
 }

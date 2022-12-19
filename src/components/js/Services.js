@@ -48,35 +48,6 @@ const Services = () => {
           </div>
 
        </div>
-
-         {/* <div>
-          <FaMobileAlt/>
-          <h4>App Development</h4>
-          <p>Develop optimised web apps</p>
-        </div>
-
-        <div>
-          <FaChartPie/>
-          <h4>Data Analysis</h4>
-          <p>Develop optimised web apps</p>
-        </div>
-
-        
-        <div>
-          <FaPalette/>
-          <h4>Web Design</h4>
-          <p>Develop optimised web apps</p>
-        </div>
-
-         <div>
-          <FaChartLine/>
-          <h4>Marketing</h4>
-          <p>Develop optimised web apps</p>
-        </div> */}
-
-
-
-
     </div>
   )
 }

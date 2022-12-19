@@ -15,9 +15,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 #team{
-    padding-top: 50px ;
+    padding-top: 100px ;
 }
 .teamhead{
     text-align: center;
@@ -26,8 +27,8 @@
     font-family: 'Poppins', sans-serif;
 }
 .teamperson{
-    width: 270px;
-    height: 400px;
+    width: 350px;
+    height: 460px;
     position: relative;
     border-radius: 25px;
     background-color: black;
@@ -97,4 +98,24 @@
 }
 .spacepro2{
     margin-left: 50px;
+}
+
+@media screen and (max-width:830px) {
+    .profilediv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .spacepro1{
+        margin-right: 0;
+    }
+    .spacepro2{
+        margin-left: 0;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .teamperson{
+        width: 85%;
+    }  
 }

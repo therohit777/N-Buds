@@ -5,15 +5,16 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
+    width: 100%;
+    overflow: hidden;
 }
 #contactus{
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .contactuscontainer{
     width: 70%;
     border-radius: 15px;
-    height: 100vh;
-    background-color: aqua;
+    background-color: rgb(255, 253, 240);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -22,6 +23,7 @@
 .addresscont{
     width: 40%;
     height: 100%;
+    padding-bottom:100px ;
     background-color: #f9cc02;     
     border-radius: 15px 0px 0px 15px ;
 }
@@ -30,6 +32,7 @@
     background-color: rgb(255, 253, 240);
     height: 100%;
     display: flex;
+    padding-bottom:68px ;
     flex-direction: column;
     align-items: center;
     border-radius: 0px 15px 15px 0px ;
@@ -114,4 +117,38 @@
 .speaklogo{
     font-size: 120px;
     margin-top: 50px;
+}
+@media screen and (max-width:950px) {
+    .contactuscontainer{
+        width: 90%;
+    }    
+}
+
+@media screen and (max-width:750px) {
+    .contactuscontainer{
+        width: 70%;
+        flex-direction: column;
+    }
+    .addresscont{
+        width: 100%;
+        border-radius: 15px 15px 0px 0px ;
+    }
+    .sendmessagecont{
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .contactuscontainer{
+        width: 85%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .contactuscontainer{
+        width: 90%;
+        flex-direction: column;
+    }
 }

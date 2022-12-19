@@ -1,23 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../css/navbar.css";
 import {MdViewHeadline} from "react-icons/md";
+import { WindowScrollController } from 'fullcalendar';
 
 const Navbar = () => {
+  const [navscrollcol, setnavscrollcol] = useState(true);
+  const [navhid, setnavhid] = useState(true);
+
+  const changecol=()=>{
+    console.log(window.scrollY);
+    if(window.scrollY>=80){
+      setnavscrollcol(false);
+    }
+    else{
+      setnavscrollcol(true)
+    }
+  }
+  
+  window.addEventListener('scroll',changecol);
+  
   return (
-    <div className='navbar'>
+    <div className="headnav">
+    <div className={(navscrollcol)?'navbar':'navbar addcol'} >
         <div className="logo">
-         <a href="#home">N-Buds</a>
+         <a href="#home" className={(navscrollcol)?'':'addcol1'}>N-Buds</a>
         </div>
-        <div className="navitems">
-          <ul className='navlist'>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#aboutus">About us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Our Team</a></li>
-            <li><a href="#contactus">Contact us</a></li>
+       
+          <ul className={(navhid)?'navlist':'navlist navhide'}>
+            <li><a href="#home" className={(navscrollcol)?'':'addcol1'}>Home</a></li>
+            {/* <li><a href="#aboutus" className={(navscrollcol)?'':'addcol1'}>About us</a></li> */}
+            <li><a href="#services" className={(navscrollcol)?'':'addcol1'}>Services</a></li>
+            <li><a href="#team" className={(navscrollcol)?'':'addcol1'}>Our Team</a></li>
+            <li><a href="#contactus" className={(navscrollcol)?'':'addcol1'}>Contact us</a></li>
           </ul>
-        </div>
-        <MdViewHeadline className='hamburgermenu'/>
+        <MdViewHeadline className='hamburgermenu' onClick={()=>{setnavhid(!navhid)}}/>
+    </div>
     </div>
   )
 }
